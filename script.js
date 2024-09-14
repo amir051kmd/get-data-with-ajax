@@ -10,14 +10,14 @@ function loadUsers() {
 
         let li = document.createElement('li');
         li.classList = 'list-group-item user-item text-left ';
-        
+
         let img = document.createElement('img');
         img.className = 'img-circle img-user img-thumbnail';
         img.setAttribute('src', users[i].avatar_url);
         li.append(img);
         console.log(li);
 
-        
+
         let h3 = document.createElement('h3');
         let a = document.createElement('a');
         a.innerText = users[i].login;
@@ -26,11 +26,13 @@ function loadUsers() {
         document.querySelector('.list-group').append(li);
       }
     }
-  }  
+  }
 
   xhr.send();
 }
 loadUsers();
+
+// ! this is a test for gh
 
 
 
